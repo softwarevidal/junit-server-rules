@@ -1,8 +1,6 @@
 # JUnit server rules
 
-Pick one of the available artefacts (see modules here) and write:
-
-Just use it like this:
+Pick one of the available artefacts (see Maven modules) and write:
 
 ```java
 	@ClassRule
