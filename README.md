@@ -1,6 +1,6 @@
 # JUnit server rules
 
-## Embedded JUnit Tomcat 8.x rule
+Pick one of the available artefacts (see modules here) and write:
 
 Just use it like this:
 
@@ -9,7 +9,7 @@ Just use it like this:
 	public static final ServletContainerRule server = new ServletContainerRule() {
 		@Override
 		public Iterable<WebAppParameter> webappParameters() {
-			return ImmutableList.of(
+			return Arrays.asList(
 				parameter("spring.profiles.active", "atom,apostil,multi-lang,news")
          		);
 		}
